@@ -1,12 +1,12 @@
 /* --- Root Variables & Theme Colors --- */
 :root {
-  --bg-primary: #fcfcfc;
-  --bg-alt: #f3f4f6;
-  --text-dark: #111827;
-  --text-muted: #4b5563;
-  --accent: #2563eb;
-  --accent-hover: #1d4ed8;
-  --border-color: #e5e7eb;
+  --bg-primary: #111827; /* Dark background */
+  --bg-alt: #1f2937;     /* Darker accent background */
+  --text-dark: #f9fafb;  /* White/Light text for readability */
+  --text-muted: #d1d5db; /* Light grey text */
+  --accent: #22c55e;     /* Primary Green from Valaverse branding */
+  --accent-hover: #4ade80; /* Brighter green for hover effects */
+  --border-color: #374151; /* Dark grey border */
   --font-heading: 'Playfair Display', serif;
   --font-body: 'Inter', sans-serif;
 }
