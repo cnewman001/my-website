@@ -9,12 +9,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Playfair+Display:ital,wght@0,600;0,800;1,400&display=swap" rel="stylesheet">
   <style>
-    .banner-img {
-      width: 100%;
-      max-height: 380px;
-      object-fit: cover;
-      border-bottom: 1px solid var(--border-color);
-    }
     .book-layout {
       display: grid;
       grid-template-columns: 280px 1fr;
@@ -25,7 +19,8 @@
       width: 100%;
       max-width: 280px;
       border-radius: 8px;
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+      box-shadow: 0 0 20px rgba(57, 255, 20, 0.2);
+      border: 1px solid var(--border-color);
     }
     @media (max-width: 768px) {
       .book-layout {
@@ -40,6 +35,7 @@
 </head>
 <body>
 
+  <!-- Navigation -->
   <nav class="navbar">
     <div class="logo"><a href="index.html" style="text-decoration: none; color: inherit;">VALA NEWMAN <span>PUBLISHING</span></a></div>
     <ul class="nav-links">
@@ -52,24 +48,29 @@
     </ul>
   </nav>
 
-  <img src="banner.png" alt="Vala Newman Publishing Banner" class="banner-img">
+  <!-- Banner Header -->
+  <img src="banner.jpg" alt="Welcome to the Valaverse Banner" class="banner-img">
 
+  <!-- Hero Section -->
   <header class="hero">
     <div class="hero-content">
+      <img src="profile.jpg" alt="Vala Newman Profile" class="profile-img">
+      <br>
       <span class="badge">Author • Pop Culture Essayist • Founder</span>
       <h1>Stories, Cinema & Independent Publishing.</h1>
       <p style="max-width: 680px; margin: 0.5rem auto 1.5rem;">Building an independent publishing company from the ground up while reviewing TV and movies, writing fiction, and creator of the Valaverse media brand.</p>
       <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-        <a href="#book" class="card-link" style="background: var(--accent); color: #fff; padding: 0.6rem 1.2rem; border-radius: 6px; text-decoration: none;">Get "Right Love, Wrong Time"</a>
-        <a href="#writing" class="card-link" style="border: 1px solid var(--border-color); padding: 0.6rem 1.2rem; border-radius: 6px; text-decoration: none;">Read My Writings</a>
+        <a href="#book" class="card-link" style="background: var(--accent); color: #000; padding: 0.6rem 1.2rem; border-radius: 6px; text-decoration: none; font-weight: 800;">Get "Right Love, Wrong Time"</a>
+        <a href="#writing" class="card-link" style="border: 1px solid var(--accent); padding: 0.6rem 1.2rem; border-radius: 6px; text-decoration: none;">Read My Writings</a>
       </div>
     </div>
   </header>
 
   <main class="container" style="padding-bottom: 4rem;">
 
+    <!-- Featured Release -->
     <section id="book" style="margin-bottom: 4rem; padding-top: 2rem;">
-      <h2 style="font-family: 'Playfair Display', serif; border-bottom: 2px solid var(--border-color); padding-bottom: 0.5rem; margin-bottom: 1.5rem;">Featured Release</h2>
+      <h2 style="font-family: 'Playfair Display', serif; border-bottom: 2px solid var(--accent); padding-bottom: 0.5rem; margin-bottom: 1.5rem;">Featured Release</h2>
       
       <div class="card" style="padding: 2.5rem;">
         <div class="book-layout">
@@ -86,15 +87,16 @@
             <div style="margin-top: 1.5rem; line-height: 1.8;">
               <p style="margin-bottom: 0.25rem;">✓ Available now on Amazon</p>
               <p style="margin-bottom: 1rem;">✓ Published via Vala Newman Publishing</p>
-              <a href="#" class="card-link" style="background: var(--accent); color: #fff; padding: 0.6rem 1.2rem; border-radius: 6px; text-decoration: none;">Buy on Amazon</a>
+              <a href="#" class="card-link" style="background: var(--accent); color: #000; padding: 0.6rem 1.2rem; border-radius: 6px; text-decoration: none; font-weight: 800;">Buy on Amazon</a>
             </div>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- Writing & Film Analysis -->
     <section id="writing" style="margin-bottom: 4rem;">
-      <h2 style="font-family: 'Playfair Display', serif; border-bottom: 2px solid var(--border-color); padding-bottom: 0.5rem; margin-bottom: 0.5rem;">Writing & Film Analysis</h2>
+      <h2 style="font-family: 'Playfair Display', serif; border-bottom: 2px solid var(--accent); padding-bottom: 0.5rem; margin-bottom: 0.5rem;">Writing & Film Analysis</h2>
       <p style="color: var(--text-muted); margin-bottom: 1.5rem;">Short stories, pop culture breakdowns, and movie/TV essays.</p>
       
       <div class="card-grid">
@@ -135,21 +137,70 @@
       </div>
     </section>
 
+    <!-- The Valaverse Podcast -->
     <section id="podcast" style="margin-bottom: 4rem;">
-      <h2 style="font-family: 'Playfair Display', serif; border-bottom: 2px solid var(--border-color); padding-bottom: 0.5rem; margin-bottom: 0.5rem;">The Valaverse Podcast</h2>
+      <h2 style="font-family: 'Playfair Display', serif; border-bottom: 2px solid var(--accent); padding-bottom: 0.5rem; margin-bottom: 0.5rem;">The Valaverse Podcast</h2>
       <p style="color: var(--text-muted); margin-bottom: 1.5rem;">Unfiltered discussions on media, writing, pop culture, and life.</p>
       
       <div class="card">
         <span class="card-tag">Featured Episode</span>
         <h3>Welcome to the Valaverse</h3>
         <p>Tune in as we dissect cinema, pop culture, and the raw reality of building a publishing brand from scratch.</p>
-        <div style="background: var(--bg-color); border: 1px dashed var(--border-color); padding: 1rem; border-radius: 6px; margin: 1rem 0; text-align: center; color: var(--text-muted);">
+        <div style="background: #000; border: 1px dashed var(--accent); padding: 1.25rem; border-radius: 6px; margin: 1rem 0; text-align: center; color: var(--accent);">
           🎧 Embedded Audio Player (Spotify / Apple Podcast Widget Coming Soon)
         </div>
         <a href="#" class="card-link">Watch on YouTube →</a>
       </div>
     </section>
 
+    <!-- Official Merch -->
     <section id="merch" style="margin-bottom: 4rem;">
-      <h2 style="font-family: 'Playfair Display', serif; border-bottom: 2px solid var(--border-color); padding-bottom: 0.5rem; margin-bottom: 0.5rem;">Official Merch</h2>
+      <h2 style="font-family: 'Playfair Display', serif; border-bottom: 2px solid var(--accent); padding-bottom: 0.5rem; margin-bottom: 0.5rem;">Official Merch</h2>
       <p style="color: var(--text-muted); margin-bottom: 1.5rem;">Gear supporting Vala Newman Publishing and the Valaverse.</p>
+
+      <div class="card-grid">
+        <article class="card">
+          <span class="card-tag">Tee Design</span>
+          <h3>Right Love, Wrong Time Tee</h3>
+          <p style="font-weight: 600; color: var(--text-primary);">$25.00</p>
+          <span class="badge" style="align-self: flex-start;">Coming Soon</span>
+        </article>
+
+        <article class="card">
+          <span class="card-tag">Mug Design</span>
+          <h3>Valaverse Ceramic Mug</h3>
+          <p style="font-weight: 600; color: var(--text-primary);">$18.00</p>
+          <span class="badge" style="align-self: flex-start;">Coming Soon</span>
+        </article>
+
+        <article class="card">
+          <span class="card-tag">Tote Design</span>
+          <h3>Vala Newman Publishing Canvas Tote</h3>
+          <p style="font-weight: 600; color: var(--text-primary);">$22.00</p>
+          <span class="badge" style="align-self: flex-start;">Coming Soon</span>
+        </article>
+      </div>
+    </section>
+
+    <!-- Follow the Journey / Connect -->
+    <section id="connect" style="margin-bottom: 2rem;">
+      <h2 style="font-family: 'Playfair Display', serif; border-bottom: 2px solid var(--accent); padding-bottom: 0.5rem; margin-bottom: 0.5rem;">Follow the Journey</h2>
+      <p style="color: var(--text-muted); margin-bottom: 1.5rem;">Connect with Baby Vala across all streams, socials, and video content.</p>
+
+      <div class="card" style="display: flex; gap: 1.25rem; flex-wrap: wrap;">
+        <a href="#" class="card-link">Instagram →</a>
+        <a href="#" class="card-link">TikTok →</a>
+        <a href="#" class="card-link">YouTube →</a>
+        <a href="#" class="card-link">Twitch →</a>
+        <a href="#" class="card-link">Kick →</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Vala Newman Publishing | Valaverse. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
