@@ -8,6 +8,35 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Playfair+Display:ital,wght@0,600;0,800;1,400&display=swap" rel="stylesheet">
+  <style>
+    .banner-img {
+      width: 100%;
+      max-height: 380px;
+      object-fit: cover;
+      border-bottom: 1px solid var(--border-color);
+    }
+    .book-layout {
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      gap: 2rem;
+      align-items: start;
+    }
+    .book-cover-img {
+      width: 100%;
+      max-width: 280px;
+      border-radius: 8px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    }
+    @media (max-width: 768px) {
+      .book-layout {
+        grid-template-columns: 1fr;
+      }
+      .book-cover-img {
+        margin: 0 auto 1.5rem auto;
+        display: block;
+      }
+    }
+  </style>
 </head>
 <body>
 
@@ -22,6 +51,8 @@
       <li><a href="#connect">Connect</a></li>
     </ul>
   </nav>
+
+  <img src="banner.jpg" alt="Vala Newman Publishing Banner" class="banner-img">
 
   <header class="hero">
     <div class="hero-content">
@@ -39,18 +70,25 @@
 
     <section id="book" style="margin-bottom: 4rem; padding-top: 2rem;">
       <h2 style="font-family: 'Playfair Display', serif; border-bottom: 2px solid var(--border-color); padding-bottom: 0.5rem; margin-bottom: 1.5rem;">Featured Release</h2>
+      
       <div class="card" style="padding: 2.5rem;">
-        <span class="card-tag">By Vala Newman Publishing</span>
-        <h3 style="font-size: 2rem; margin-bottom: 0.5rem;">Right Love, Wrong Time</h3>
-        <p style="font-style: italic; color: var(--text-primary); font-weight: 500;">Some people find the right love at the right time. Sam Keaton wasn’t one of them.</p>
-        <p>Samantha Keaton had it all mapped out: stay out of trouble, keep her grades up, and survive senior year with her two best friends by her side. But everything changes when Jax Ryner—sarcastic, reckless, and entirely off-limits—stumbles into her life like a beautiful storm.</p>
-        <p>What starts as stolen glances and inside jokes quickly unravels into something deeper, something dangerous, something real. But between broken families, long-standing friendships, and dreams that stretch far beyond their small town, Sam and Jax find themselves caught in the most painful kind of love: the kind that arrives too soon.</p>
-        <p>As graduation looms and the world begins to pull them apart, Sam must decide if love is worth risking everything for—even when the timing couldn't be worse.</p>
-        <p>Heartbreaking, hopeful, and brutally honest, <i>Right Love, Wrong Time</i> is a story about first love, found family, and the ache of growing up.</p>
-        <div style="margin-top: 1.5rem; line-height: 1.8;">
-          <p style="margin-bottom: 0.25rem;">✓ Available now on Amazon</p>
-          <p style="margin-bottom: 1rem;">✓ Published via Vala Newman Publishing</p>
-          <a href="#" class="card-link" style="background: var(--accent); color: #fff; padding: 0.6rem 1.2rem; border-radius: 6px; text-decoration: none;">Buy on Amazon</a>
+        <div class="book-layout">
+          <img src="book-cover.png" alt="Right Love, Wrong Time Cover" class="book-cover-img">
+          
+          <div>
+            <span class="card-tag">By Vala Newman Publishing</span>
+            <h3 style="font-size: 2rem; margin-bottom: 0.5rem;">Right Love, Wrong Time</h3>
+            <p style="font-style: italic; color: var(--text-primary); font-weight: 500; margin-bottom: 1rem;">Some people find the right love at the right time. Sam Keaton wasn’t one of them.</p>
+            <p>Samantha Keaton had it all mapped out: stay out of trouble, keep her grades up, and survive senior year with her two best friends by her side. But everything changes when Jax Ryner—sarcastic, reckless, and entirely off-limits—stumbles into her life like a beautiful storm.</p>
+            <p>What starts as stolen glances and inside jokes quickly unravels into something deeper, something dangerous, something real. But between broken families, long-standing friendships, and dreams that stretch far beyond their small town, Sam and Jax find themselves caught in the most painful kind of love: the kind that arrives too soon.</p>
+            <p>As graduation looms and the world begins to pull them apart, Sam must decide if love is worth risking everything for—even when the timing couldn't be worse.</p>
+            <p>Heartbreaking, hopeful, and brutally honest, <i>Right Love, Wrong Time</i> is a story about first love, found family, and the ache of growing up.</p>
+            <div style="margin-top: 1.5rem; line-height: 1.8;">
+              <p style="margin-bottom: 0.25rem;">✓ Available now on Amazon</p>
+              <p style="margin-bottom: 1rem;">✓ Published via Vala Newman Publishing</p>
+              <a href="#" class="card-link" style="background: var(--accent); color: #fff; padding: 0.6rem 1.2rem; border-radius: 6px; text-decoration: none;">Buy on Amazon</a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -115,49 +153,3 @@
     <section id="merch" style="margin-bottom: 4rem;">
       <h2 style="font-family: 'Playfair Display', serif; border-bottom: 2px solid var(--border-color); padding-bottom: 0.5rem; margin-bottom: 0.5rem;">Official Merch</h2>
       <p style="color: var(--text-muted); margin-bottom: 1.5rem;">Gear supporting Vala Newman Publishing and the Valaverse.</p>
-
-      <div class="card-grid">
-        <article class="card">
-          <span class="card-tag">Tee Design</span>
-          <h3>Right Love, Wrong Time Tee</h3>
-          <p style="font-weight: 600; color: var(--text-primary);">$25.00</p>
-          <span class="badge" style="align-self: flex-start;">Coming Soon</span>
-        </article>
-
-        <article class="card">
-          <span class="card-tag">Mug Design</span>
-          <h3>Valaverse Ceramic Mug</h3>
-          <p style="font-weight: 600; color: var(--text-primary);">$18.00</p>
-          <span class="badge" style="align-self: flex-start;">Coming Soon</span>
-        </article>
-
-        <article class="card">
-          <span class="card-tag">Tote Design</span>
-          <h3>Vala Newman Publishing Canvas Tote</h3>
-          <p style="font-weight: 600; color: var(--text-primary);">$22.00</p>
-          <span class="badge" style="align-self: flex-start;">Coming Soon</span>
-        </article>
-      </div>
-    </section>
-
-    <section id="connect" style="margin-bottom: 2rem;">
-      <h2 style="font-family: 'Playfair Display', serif; border-bottom: 2px solid var(--border-color); padding-bottom: 0.5rem; margin-bottom: 0.5rem;">Follow the Journey</h2>
-      <p style="color: var(--text-muted); margin-bottom: 1.5rem;">Connect with Baby Vala across all streams, socials, and video content.</p>
-
-      <div class="card" style="display: flex; gap: 1.25rem; flex-wrap: wrap;">
-        <a href="#" class="card-link">Instagram →</a>
-        <a href="#" class="card-link">TikTok →</a>
-        <a href="#" class="card-link">YouTube →</a>
-        <a href="#" class="card-link">Twitch →</a>
-        <a href="#" class="card-link">Kick →</a>
-      </div>
-    </section>
-
-  </main>
-
-  <footer class="footer">
-    <p>&copy; 2026 Vala Newman Publishing | Valaverse. All rights reserved.</p>
-  </footer>
-
-</body>
-</html>
